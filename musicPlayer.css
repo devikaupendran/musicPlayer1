@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body{
+    background-image: url("./bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    min-height:100vh;
+    background-color: rgba(150,150,150,0.182);
+    backdrop-filter: blur(6px);
+}
+
+/* header section  */
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2em 8em;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:6em;
+}
+header nav ul a{
+    display: inline-block;
+    width: max-content;
+    color:white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+header nav ul a:hover{
+    transform: scale(1.2);
+    border-bottom:3px splid rgb(255,113,66);
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    width: max-content;
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 3px;
+    transition: 0.3 ease;
+}
+.logo span{
+    color: red;
+}
+.logo:hover{
+    transform: scale(1.3);
+}
+
+/* content section  */
+.content{
+    width:100%;
+    position:absolute;
+    top:30%;
+}
+.left-col{
+    margin-left:9%;
+}
+.left-col h1{
+    color:white;
+    font-size: 90px;
+    line-height: 120px;
+    float: left;
+}
+.left-col h1 span{
+    color:red;
+    
+}
+
+
+.right-col{
+    display: flex;
+    align-items: center;
+    float: right;
+    padding: 15px 40px;
+    margin-right: 5%;
+    margin-top: 120px;
+    font-size: 30px;
+    color: white;
+    border:1px solid white;
+    border-radius: 2em;
+}
+.right-col p{
+    margin-right:10px;
+}
+.right-col .play{
+    transition: 0.5 ease;
+    max-width: 50px;
+    cursor: pointer;
+}
+.right-col .play:hover{
+    transform: scale(1.1);
+}
+.headphone{
+    width:350px;
+    margin-left: 13em;
+    margin-top: -4em;
+    transition: 0.5s ease;
+}
+.headphone:hover{
+    transform: scale(1.3);
+}

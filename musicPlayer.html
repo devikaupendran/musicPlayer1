@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link  -->
+     <link rel="stylesheet" href="musicPlayer.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header section starts -->
+        <header>
+            <nav>
+                <div class="nav-logo"><a href="#" class="logo">MUSIC <span>HUB</span></a></div>
+                <ul>
+                    <li><a href="#">MUSICS</a></li>
+                    <li><a href="#">HITS</a></li>
+                    <li><a href="#">PODCASTS</a></li>
+                    <li><a href="#">NEW RELEASE</a></li>
+                    <li><a href="#">YOUR LIBRARY </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header section ends -->
+
+        <!-- content section start  -->
+        <div class="content">
+            <div class="left-col">
+                <h1>FEEL <br>THE <br> <span>MUSIC</span> </h1>
+            </div>
+
+            <img src="./pngwing.com.png" alt="headphone-Image" class="headphone">
+            <div class="right-col">
+                <p>Click to Listen</p>
+                <img src="play-64.png" alt="play-button" class="play" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="music">
+        <source src="./laila.mp3" type="audio/mp3">
+    </audio>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
